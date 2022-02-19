@@ -50,6 +50,7 @@ public class Lox {
         for (Token token : tokens) {
             System.out.println(token);
         }
+
     }
 
     static void error(int line, String message) {
@@ -61,4 +62,5 @@ public class Lox {
                 "[line " + line + "] Error" + where + ": " + message);
         hadError = true;
     }
+
 }
